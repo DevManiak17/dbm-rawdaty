@@ -1,0 +1,262 @@
+// Upewnij się, że masz włączone Intenty!
+
+// Usunięta wiadomość
+{
+  "name": "Message Deleted",
+  "temp": "Message",
+  "event-type": "18",
+  "_id": "TADuY",
+  "actions": [
+    {
+      "info": "0",
+      "find": "Tu wklej ID kanału",
+      "storage": "1",
+      "varName": "Log Channel",
+      "name": "Find Channel"
+    },
+    {
+      "message": "1",
+      "varName": "Message",
+      "info": "3",
+      "storage": "1",
+      "varName2": "Message Author",
+      "name": "Store Message Info"
+    },
+    {
+      "message": "1",
+      "varName": "Message",
+      "info": "4",
+      "storage": "1",
+      "varName2": "Message Channel",
+      "name": "Store Message Info"
+    },
+    {
+      "message": "1",
+      "varName": "Message",
+      "info": "2",
+      "storage": "1",
+      "varName2": "Message Text",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "2",
+      "varName": "Message Author",
+      "info": "16",
+      "storage": "1",
+      "varName2": "Member Avatar URL",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "Message Author",
+      "info": "21",
+      "storage": "1",
+      "varName2": "Member Tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "Message Author",
+      "info": "1",
+      "storage": "1",
+      "varName2": "Member ID",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "",
+      "author": "${tempVars(\"Member Tag\")} [${tempVars(\"Member ID\")}]",
+      "color": "RED",
+      "url": "",
+      "authorIcon": "${tempVars(\"Member Avatar URL\")}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "Embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "fieldName": "Kanał",
+      "message": "${tempVars(\"Message Channel\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "fieldName": "Treść wiadomości",
+      "message": "${tempVars(\"Message Text\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "Usunięta wiadomość",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "channel": "5",
+      "varName2": "Log Channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
+
+// Edytowana wiadomość
+{
+  "name": "Message Update",
+  "temp": "Message [First]",
+  "event-type": "26",
+  "_id": "hDuAS",
+  "actions": [
+    {
+      "info": "0",
+      "find": "Tu wklej ID kanału",
+      "storage": "1",
+      "varName": "Log Channel",
+      "name": "Find Channel"
+    },
+    {
+      "message": "1",
+      "varName": "Message [First]",
+      "info": "3",
+      "storage": "1",
+      "varName2": "Message Author",
+      "name": "Store Message Info"
+    },
+    {
+      "message": "1",
+      "varName": "Message [First]",
+      "info": "4",
+      "storage": "1",
+      "varName2": "Message Channel",
+      "name": "Store Message Info"
+    },
+    {
+      "message": "1",
+      "varName": "Message [First]",
+      "info": "2",
+      "storage": "1",
+      "varName2": "Message Text [First]",
+      "name": "Store Message Info"
+    },
+    {
+      "message": "1",
+      "varName": "Message [Last]",
+      "info": "2",
+      "storage": "1",
+      "varName2": "Message Text [Last]",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "2",
+      "varName": "Message Author",
+      "info": "16",
+      "storage": "1",
+      "varName2": "Member Avatar URL",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "Message Author",
+      "info": "21",
+      "storage": "1",
+      "varName2": "Member Tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "Message Author",
+      "info": "1",
+      "storage": "1",
+      "varName2": "Member ID",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "",
+      "author": "${tempVars(\"Member Tag\")} [${tempVars(\"Member ID\")}]",
+      "color": "BLUE",
+      "url": "",
+      "authorIcon": "${tempVars(\"Member Avatar URL\")}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "Embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "fieldName": "Kanał",
+      "message": "${tempVars(\"Message Channel\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "fieldName": "Poprzednia treść wiadomości",
+      "message": "${tempVars(\"Message Text [First]\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "fieldName": "Aktualna treść wiadomości",
+      "message": "${tempVars(\"Message Text [Last]\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "Edytowana wiadomość",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "channel": "5",
+      "varName2": "Log Channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "temp2": "Message [Last]"
+}
